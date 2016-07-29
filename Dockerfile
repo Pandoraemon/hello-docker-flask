@@ -4,7 +4,7 @@ MAINTAINER Captain Dao pandoraemon@daocloud.io
 RUN mkdir -p /app
 WORKDIR /app
 
-ADD requirements.tex requirements.txt
+ADD requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
 COPY docker-entrypoint.sh /usr/local/bin
