@@ -1,15 +1,15 @@
 FROM daocloud.io/python:2.7
-MAINTAINER Captain Dao pandoraemon@daocloud.io
+MAINTAINER Pandoraemon <pandoraemon@doucloud.io>
 
 RUN mkdir -p /app
-WORKDIR /app
+WORKDIR /app/
 
-ADD requirements.txt requirements.txt
-RUN pip install -r requirements.txt
+ADD requirements.txt /app/
+RUN pip install -r ./requirements.txt
 
 COPY docker-entrypoint.sh /usr/local/bin
 RUN chmod +x /usr/local/bin/docker-entrypoint.sh
 
 EXPOSE 80
-CMD ["bash"]
+CMD ./docker-entrypoint.sh
 
