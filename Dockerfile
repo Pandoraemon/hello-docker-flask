@@ -11,6 +11,6 @@ COPY docker-entrypoint.sh /usr/local/bin
 RUN chmod +x /usr/local/bin/docker-entrypoint.sh
 
 EXPOSE 8888
-ENTRYPOINT ["docker-enterypoint.sh"]
+ENTRYPOINT ["docker-entrypoint.sh"]
 CMD [""]
 
