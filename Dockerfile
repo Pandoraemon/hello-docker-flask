@@ -8,7 +8,7 @@ WORKDIR /app
 RUN pip install -r ./requirements.txt
 
 
-EXPOSE 80
+EXPOSE 5000
 ENTRYPOINT ["python"]
 CMD ["hello.py"]
 
